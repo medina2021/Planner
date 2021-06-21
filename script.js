@@ -1,16 +1,25 @@
 $(document).ready(function() {
 
-    var timeBlockEl = document.createElement("div")
-    $(timeBlockEl).addClass("timeBlock")
-    var timeEl= document.createElement("div")
- $(timeEl).addClass("time").text("3:00")
+    // Added the current date to header using moment.js
+    const currentDate = moment().format('dddd MMMM Do, YYYY'); 
+     $("#currentDay").text(currentDate);
+
+    // Current Time in 12 hour format
+    const currentHour = moment().format('h:[00]')
+    console.log(currentHour)
+
+
+var timeBlockEl = document.createElement("div")
+$(timeBlockEl).addClass("time-block")
+var timeEl= document.createElement("div")
+ $(timeEl).addClass("input-group-text").text("9 a.m")
  var inputEl = document.createElement("div")
-$(inputEl).addClass("input").text("Input")
+$(inputEl).addClass("form-control").text("Input")
 var btnEl = document.createElement("button")
-$(btnEl).addClass("startbtn").text("Start")
-$(timeEl).text("3:00")
+$(btnEl).addClass("saveBtn").text("save")
+$(timeEl).text("9 a.m")
 $(inputEl).text("Input")
-$(btnEl).text("Start")
+$(btnEl).text("Save")
 
 $( ".container" ).append(timeBlockEl);
 $( timeBlockEl ).append(timeEl);
