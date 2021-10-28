@@ -7,5 +7,5 @@ Green indicates that the time slot you are saving to is in the future. Red means
 
 ## Mock-Up
 
-![Mock-Up]("mockup.PNG")
+![Mock-Up](mockup.PNG)
 
