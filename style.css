@@ -21,10 +21,11 @@ body {
     border-bottom: 10px solid black;
   }
   
-  .description {
+   .description {
     white-space: pre-wrap;
-  }
+  } 
   
+
   .time-block {
     text-align: center;
     border-radius: 15px;
@@ -32,7 +33,7 @@ body {
   }
   
   .row {
-    white-space: pre-wrap;
+    white-space: normal;
     height: 80px;
     border-top: 1px solid white;
   }
@@ -40,7 +41,7 @@ body {
   .hour {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed #000000;
+    border-top: 1px solid #000000;
   }
   
   .past {
@@ -60,6 +61,7 @@ body {
   
   .saveBtn {
     border-left: 1px solid black;
+    align-items:flex-start;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06aed5;
@@ -71,4 +73,16 @@ body {
     transition: all 0.3s ease-in-out;
   }
 
-  
+  @media screen and (max-width: 768px), screen and (max-width: 575px){
+    .row{
+      height:auto;
+      margin: top 20px;
+    }
+
+  textarea{
+    min-height: 85px;
+    border:0;
+  }
+
+  }
+   
